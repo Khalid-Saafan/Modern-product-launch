@@ -9,16 +9,29 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #e9e9e9;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 
   &__content {
     align-self: center;
-    max-width: 720px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 40px;
     text-align: center;
+
+    padding: 80px 240px;
   }
 
   &__title {
@@ -59,7 +72,6 @@
     }
   }
 
-  // table grid system
   &__table {
     display: flex;
     justify-content: space-between;
@@ -88,12 +100,12 @@
       font-size: 21.65px;
     }
   }
-
   &__head,
   &__head-2,
   &__head-3 {
+    max-height: 96px;
     font-weight: 600;
-    line-height: 120%;
+    line-height: 1.2;
     letter-spacing: -0.95px;
     justify-content: center;
   }
@@ -105,6 +117,10 @@
 
     &:not(:first-child) {
       padding: 32px 20px;
+    }
+
+    &:nth-child(2) {
+      border-top: 2px solid #e9e9e9;
     }
 
     display: flex;
@@ -181,12 +197,13 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
   .specifications {
     max-width: 375px;
 
     &__content {
       max-width: 375px;
+      padding: 80px 0;
     }
 
     &__btn {
@@ -202,7 +219,6 @@
         font-size: 50px;
         letter-spacing: -1.5px;
         line-height: 0.95;
-
       }
     }
 
