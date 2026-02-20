@@ -1,0 +1,81 @@
+@use "../abstract/variables" as *;
+@use "../abstract/placeholders" as *;
+@use "../abstract/mixins" as *;
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  padding: 40px 0 20px 0;
+}
+
+.page {
+  &__nav {
+  }
+
+  &__list {
+    display: flex;
+    gap: 27px;
+
+    @extend %fontfamily_placeholder;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.35px;
+    color: $color_text;
+    transition: color 0.35s;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: #000;
+    }
+
+    &:hover,
+    &:active {
+      color: $color_text-link;
+    }
+  }
+}
+
+.copyright {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: -0.12px;
+  color: #485c11;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
+  .footer {
+    max-width: 720px;
+    padding: 40px 0 20px 0;
+  }
+
+  .copyright {
+    font-size: 11px;
+    letter-spacing: -0.11px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer {
+    max-width: 375px;
+  }
+
+  .page {
+    &__list {
+      flex-direction: column;
+    }
+  }
+
+  .copyright {
+    font-size: 10.5px;
+    line-height: 1.4;
+    letter-spacing: -0.315px;
+  }
+}

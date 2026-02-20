@@ -1,0 +1,18 @@
+@mixin btn($color) {
+  background-color: $color;
+  padding: 14px 22px;
+  border-radius: 1000px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #fff;
+}
+
+
+// @media only screen and (min-width: 700px) and (max-width: 1199px) {
+
+// }
+
+// @media only screen and (max-width: 450px) {
+
+// }

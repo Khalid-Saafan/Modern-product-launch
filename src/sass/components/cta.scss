@@ -1,0 +1,114 @@
+@use "../abstract/variables" as *;
+@use "../abstract/placeholders" as *;
+@use "../abstract/mixins" as *;
+
+.cta {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 40px;
+
+  padding: 120px 300px;
+
+  &__title {
+    font-family: "Crimson Text", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: -1.8px;
+  }
+
+  &__desc {
+    color: #6f6f6f;
+  }
+
+  &__btn {
+    @include btn(#dfecc6);
+    @extend %fontfamily_placeholder;
+    font-size: 15px;
+    letter-spacing: -0.375px;
+    color: #000;
+
+    transition: background-color 0.35s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #8e9c78;
+      color: #fff;
+    }
+
+    img {
+      display: inline-block;
+      transition: transform 0.35s;
+    }
+    &:hover img {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
+  .cta {
+    max-width: 720px;
+    padding: 120px 100px;
+
+    &__title {
+      font-size: 54px;
+      line-height: 0.9;
+      letter-spacing: -1.62px;
+    }
+
+    &__btn {
+      font-size: 14px;
+      letter-spacing: -0.35px;
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 699px) {
+  .cta {
+    max-width: 720px;
+    padding: 120px 100px;
+
+    &__title {
+      font-size: 54px;
+      line-height: 0.9;
+      letter-spacing: -1.62px;
+    }
+
+    &__btn {
+      font-size: 14px;
+      letter-spacing: -0.35px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cta {
+    max-width: 375px;
+    padding: 120px 16px;
+
+    &__title {
+      font-size: 50px;
+      line-height: 0.95;
+      letter-spacing: -1.5px;
+    }
+
+    &__btn {
+      font-size: 14px;
+      letter-spacing: -0.35px;
+    }
+  }
+}
+
+// @media only screen and (min-width: 700px) and (max-width: 1199px) {
+
+// }
+
+// @media only screen and (max-width: 450px) {
+
+// }

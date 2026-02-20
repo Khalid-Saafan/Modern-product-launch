@@ -1,0 +1,104 @@
+@use "../abstract/variables" as *;
+@use "../abstract/placeholders" as *;
+
+.testimonial {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+
+  &__quote-container {
+    padding-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  &__quote {
+    font-family: "Crimson Text", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -1.6px;
+  }
+
+  &__author {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @extend %fontfamily_placeholder;
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: -0.75px;
+
+    span {
+      font-family: "Roboto Mono", sans-serif;
+      font-size: 12px;
+      line-height: 1.4;
+      letter-spacing: -0.12px;
+      color: #485c11;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
+  .testimonial {
+    gap: 40px;
+    flex-direction: column-reverse;
+    max-width: 720px;
+
+    &__quote-container {
+      padding-left: 0;
+    }
+
+    &__quote {
+      line-height: 1.1;
+      letter-spacing: -1.6px;
+    }
+
+    &__author {
+      flex-direction: row;
+      align-items: center;
+      line-height: 1.4;
+      letter-spacing: -0.75px;
+
+      span {
+        font-size: 11px;
+        line-height: 1.4;
+        letter-spacing: -0.11px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .testimonial {
+    max-width: 375px;
+    flex-direction: column-reverse;
+    padding: 0 16px 100px 16px;
+
+    &__quote-container {
+      padding: 40px 16px 0 16px;
+    }
+
+    &__quote {
+      font-size: 32px;
+      letter-spacing: -1.28px;
+    }
+
+    &__author {
+      flex-direction: row;
+      align-items: center;
+      span {
+        font-size: 10.5px;
+        letter-spacing: -0.315px;
+      }
+    }
+  }
+}

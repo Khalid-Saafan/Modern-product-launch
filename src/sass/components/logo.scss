@@ -1,0 +1,61 @@
+@use "../abstract/variables" as *;
+@use "../abstract/placeholders" as *;
+@use "../abstract/mixins" as *;
+.logo {
+  max-width: 1200px;
+  padding: 50px 0;
+  margin: 0 auto;
+
+  &__container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  &__text {
+    @extend %fontfamily_placeholder;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.4;
+    letter-spacing: -0.075px;
+    color: #6f6f6f;
+  }
+
+  &__img-container {
+    padding: 20px;
+  }
+
+  &__img {
+    filter: opacity(0.6);
+  }
+}
+// logo__img-container
+// logo__img
+
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
+  .logo {
+    max-width: 720px;
+
+    &__container {
+      flex-wrap: wrap;
+      gap: 40px 20px;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .logo {
+    max-width: 375px;
+
+    &__container {
+      flex-wrap: wrap;
+      gap: 40px 20px;
+      justify-content: center;
+    }
+    &__img-container {
+      padding: 10px;
+    }
+  }
+}

@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Reddit+Mono:wght@200..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Modern Product Launch</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <!-- Navigation Start -->
+    <nav class="navigation">
+      <h3 class="navigation__title"><a href="#">Area</a></h3>
+      <div class="navigation__list-container">
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a class="navigation__list-item-link" href="#Benefits">Benefits</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-item-link" href="#spec"
+              >Specifications</a
+            >
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-item-link" href="#hid">How-to</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-item-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <button class="navigation__btn">
+          Learn More <img src="src/imgs/Arrow.svg" alt="Arrow" />
+        </button>
+      </div>
+      <img
+        src="src/imgs/Menu-icon.svg"
+        alt="Menu Icon"
+        class="navigation__toggle"
+      />
+    </nav>
+    <!-- Navigation End -->
+
+    <!-- Header Section Start -->
+    <header class="hero">
+      <h1 class="hero__heading">Browse everything</h1>
+      <div class="hero__container">
+        <div
+          class="hero__img-container"
+          aria-label="Visual chart illustrating a 78% increase in efficiency across 33 regions between 2021 and 2024, with clear upward trends year over year"
+        >
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="src/imgs/Inner-screen.svg"
+            />
+
+            <source
+              media="(min-width: 700px) and (max-width: 1199px)"
+              srcset="src/imgs/Inner-screen-tablets.svg"
+            />
+
+            <img
+              src="src/imgs/Inner-screen-mobile.svg"
+              alt="Data points on top of landscape"
+              class="benefits__img"
+            />
+          </picture>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Main Start -->
+    <main>
+      <!-- Logo Section Start -->
+      <section class="logo">
+        <p class="logo__text">Trusted by:</p>
+        <div class="logo__container">
+          <div class="logo__img-container">
+            <img src="src/imgs/Logo_1.svg" alt="Logoipsum" class="logo__img" />
+          </div>
+          <div class="logo__img-container">
+            <img src="src/imgs/Logo_2.svg" alt="Logoipsum" class="logo__img" />
+          </div>
+          <div class="logo__img-container">
+            <img src="src/imgs/Logo_3.svg" alt="Logoipsum" class="logo__img" />
+          </div>
+          <div class="logo__img-container">
+            <img src="src/imgs/Logo_4.svg" alt="Logoipsum" class="logo__img" />
+          </div>
+          <div class="logo__img-container">
+            <img src="src/imgs/Logo_5.svg" alt="Logoipsum" class="logo__img" />
+          </div>
+          <div class="logo__img-container">
+            <img src="src/imgs/Logo_6.svg" alt="Logoipsum" class="logo__img" />
+          </div>
+        </div>
+      </section>
+      <!-- Logo Section End -->
+      <!-- Benefits Section Start -->
+      <section class="benefits" id="benefits">
+        <div class="benefits__headlines">
+          <div class="box">
+            <div class="benefits__headlines-container">
+              <h2 class="benefits__heading">Benefits</h2>
+              <p class="benefits__text benefits__text--large">
+                We’ve cracked the code.
+              </p>
+              <p class="benefits__text">
+                Area provides real insights, without the data overload.
+              </p>
+            </div>
+          </div>
+          <div class="benefits__modules">
+            <!-- Caple icon module Start -->
+            <section class="benefits__module">
+              <img
+                src="src/imgs/Cable icon.svg"
+                alt="Phone"
+                class="benefits__module-icon"
+              />
+              <div class="benefits__module-desc">
+                <p class="benefits__module-title">Amplify Insights</p>
+                <p class="benefits__module-text">
+                  Unlock data-driven decisions with comprehensive analytics,
+                  revealing key opportunities for strategic regional growth.
+                </p>
+              </div>
+            </section>
+            <!-- Caple icon module End -->
+            <!-- Earth icon module Start -->
+            <section class="benefits__module">
+              <img
+                src="src/imgs/Earth icon.png"
+                alt="Phone"
+                class="benefits__module-icon"
+              />
+              <div class="benefits__module-desc">
+                <p class="benefits__module-title">
+                  Control Your Global Presence
+                </p>
+                <p class="benefits__module-text">
+                  Manage and track satellite offices, ensuring consistent
+                  performance and streamlined operations everywhere.
+                </p>
+              </div>
+            </section>
+            <!-- Earth icon module End -->
+            <!-- Account icon module Start -->
+            <section class="benefits__module">
+              <img
+                src="src/imgs/Account icon.svg"
+                alt="Phone"
+                class="benefits__module-icon"
+              />
+              <div class="benefits__module-desc">
+                <p class="benefits__module-title">Remove Language Barriers</p>
+                <p class="benefits__module-text">
+                  Adapt to diverse markets with built-in localization for clear
+                  communication and enhanced user experience.
+                </p>
+              </div>
+            </section>
+            <!-- Account icon module End -->
+            <!-- Chart icon module Start -->
+            <section class="benefits__module">
+              <img
+                src="src/imgs/Chart icon.svg"
+                alt="Phone"
+                class="benefits__module-icon"
+              />
+              <div class="benefits__module-desc">
+                <p class="benefits__module-title">Visualize Growth</p>
+                <p class="benefits__module-text">
+                  Generate precise, visually compelling reports that illustrate
+                  your growth trajectories across all regions.
+                </p>
+              </div>
+            </section>
+            <!-- Chart icon module End -->
+          </div>
+        </div>
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="src/imgs/Hero-image.svg"
+          />
+
+          <source
+            media="(min-width: 700px) and (max-width: 1199px)"
+            srcset="src/imgs/Hero-Image-tablets.svg"
+          />
+
+          <img
+            src="src/imgs/Hero-Image-mobile.svg"
+            alt="A image that shows a mountain range "
+            class="benefits__img"
+          />
+        </picture>
+      </section>
+      <!-- Benefits Section End -->
+      <!-- Features Section Start -->
+      <section class="features">
+        <div class="feature">
+          <div class="feature__headings">
+            <p class="feature__title">See the Big Picture</p>
+            <p class="feature__text">
+              Area turns your data into clear, vibrant visuals that show you
+              exactly what's happening in each region.
+            </p>
+          </div>
+
+          <ul class="feature__list">
+            <li class="feature__item">
+              <span class="feature__item-num">01</span>
+              <p class="feature__item-text">
+                Spot Trends in Seconds: No more digging through numbers.
+              </p>
+            </li>
+            <li class="feature__item">
+              <span class="feature__item-num">02</span>
+              <p class="feature__item-text">
+                Get Everyone on the Same Page: Share easy-to-understand reports
+                with your team.
+              </p>
+            </li>
+            <li class="feature__item">
+              <span class="feature__item-num">03</span>
+              <p class="feature__item-text">
+                Make Presentations Pop: Interactive maps and dashboards keep
+                your audience engaged.
+              </p>
+            </li>
+            <li class="feature__item">
+              <span class="feature__item-num">04</span>
+              <p class="feature__item-text">
+                Your Global Snapshot: Get a quick, clear overview of your entire
+                operation.
+              </p>
+            </li>
+          </ul>
+          <button class="feature__btn">Discover More</button>
+        </div>
+        <div class="feature__img-box">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="src/imgs/feature-desktop.svg"
+            />
+
+            <source
+              media="(min-width: 700px) and (max-width: 1199px)"
+              srcset="src/imgs/feature-tablet.svg"
+            />
+
+            <img
+              src="src/imgs/feature-mobile.svg"
+              alt="A render of three white cylindrical columns, against a warm creme background"
+              class="feature__img"
+            />
+          </picture>
+        </div>
+      </section>
+      <!-- Features Section End -->
+      <!-- Specification Section Start -->
+      <section class="specifications" id="spec">
+        <div class="specifications__content">
+          <h2 class="specifications__title">Specs</h2>
+          <p class="specifications__text specifications__text--large">
+            Why Choose Area?
+          </p>
+          <p class="specifications__text">
+            You need a solution that keeps up. That’s why we developed Area. A
+            developer-friendly approach to streamline your business.
+          </p>
+
+          <button class="specifications__btn">Discover More</button>
+        </div>
+        <div class="specifications__table">
+          <ul
+            class="specifications__column specifications__column--highlighted"
+          >
+            <li class="specifications__row specifications__head">Area</li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/checked.svg"
+                alt="Checked"
+                class="specifications__checked-icon"
+              />
+              <span>Ultra-fast browsing</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/checked.svg"
+                alt="Checked"
+                class="specifications__checked-icon"
+              />
+              <span>Advanced AI insights</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/checked.svg"
+                alt="Checked"
+                class="specifications__checked-icon"
+              />
+              <span>Seamless integration</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/checked.svg"
+                alt="Checked"
+                class="specifications__checked-icon"
+              />
+              <span>Advanced AI insights</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/checked.svg"
+                alt="Checked"
+                class="specifications__checked-icon"
+              />
+              <span>Ultra-fast browsing</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/checked.svg"
+                alt="Checked"
+                class="specifications__checked-icon"
+              />
+              <span>Full UTF-8 support</span>
+            </li>
+          </ul>
+
+          <ul class="specifications__column">
+            <li class="specifications__row specifications__head-2">WebSurge</li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/checked.svg"
+                alt="Checked"
+                class="specifications__checked-icon"
+              />
+              <span>Fast frowsing</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/checked.svg"
+                alt="Checked"
+                class="specifications__checked-icon"
+              />
+              <span> Basic AI recommendations</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/checked.svg"
+                alt="Checked"
+                class="specifications__checked-icon"
+              />
+              <span> Restricts customization</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/wrong.svg"
+                alt="Wrong"
+                class="specifications__checked-icon"
+              />
+              <span>Basic AI insights</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/checked.svg"
+                alt="Checked"
+                class="specifications__checked-icon"
+              />
+              <span>Fast frowsing</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/wrong.svg"
+                alt="wrong"
+                class="specifications__checked-icon"
+              />
+              <span>Potential display errors</span>
+            </li>
+          </ul>
+
+          <ul class="specifications__column">
+            <li class="specifications__row specifications__head-3">
+              HyperView
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/wrong.svg"
+                alt="wrong"
+                class="specifications__checked-icon"
+              />
+              <span>Moderate speeds</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/wrong.svg"
+                alt="wrong"
+                class="specifications__checked-icon"
+              />
+              <span>No AI assistance</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/wrong.svg"
+                alt="wrong"
+                class="specifications__checked-icon"
+              />
+              <span>Steep learning curve</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/wrong.svg"
+                alt="wrong"
+                class="specifications__checked-icon"
+              />
+              <span>No AI assistance</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/wrong.svg"
+                alt="wrong"
+                class="specifications__checked-icon"
+              />
+              <span>Moderate speeds</span>
+            </li>
+            <li class="specifications__row">
+              <img
+                src="src/imgs/wrong.svg"
+                alt="wrong"
+                class="specifications__checked-icon"
+              />
+              <span>Partial UTF-8 support</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Specification Section End -->
+
+      <!-- Testimonial Section Start -->
+      <section class="testimonial">
+        <div class="testimonial__quote-container">
+          <p class="testimonial__quote">
+            “I was skeptical, but Area has completely transformed the way I
+            manage my business. The data visualizations are so clear and
+            intuitive, and the platform is so easy to use. I can't imagine
+            running my company without it.”
+          </p>
+
+          <p class="testimonial__author">
+            John Smith
+            <span>head of data</span>
+          </p>
+        </div>
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="src/imgs/Image.svg" />
+
+          <source
+            media="(min-width: 700px) and (max-width: 1199px)"
+            srcset="src/imgs/image-1.svg"
+          />
+
+          <img
+            src="src/imgs/image-2.svg"
+            alt="A image of a concrete sphere, balanced between two other larger spheres"
+            class="testimonial__img"
+          />
+        </picture>
+      </section>
+      <!-- Testimonial Section End -->
+
+      <!-- HIW Section Start -->
+      <section class="hit" id="hid">
+        <div class="hit__frame">
+          <p class="hit__title">Map Your Success</p>
+          <button class="hit__btn">Discover More</button>
+        </div>
+        <div class="hit__steps">
+          <!-- Step 01 -->
+          <div class="hit__step">
+            <p class="step__num">01</p>
+
+            <div class="step__content">
+              <p class="step__title">Get Started</p>
+              <p class="step__desc">
+                With our intuitive setup, you’re up and running in minutes.
+              </p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="hit__step">
+            <p class="step__num">02</p>
+
+            <div class="step__content">
+              <p class="step__title">Customize and Configure</p>
+              <p class="step__desc">
+                Adapt Area to your specific requirements and preferences.
+              </p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="hit__step">
+            <p class="step__num">03</p>
+
+            <div class="step__content">
+              <p class="step__title">Grow Your Business</p>
+              <p class="step__desc">
+                Make informed decisions to exceed your goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- HIW Section End -->
+
+      <!-- Hero Section Start -->
+      <section class="img-container">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="src/imgs/land.svg" />
+
+          <source
+            media="(min-width: 700px) and (max-width: 1199px)"
+            srcset="src/imgs/land-tablets.svg"
+          />
+
+          <img
+            src="src/imgs/land-mobile.svg"
+            alt="An eye-catching landscape of green."
+            class="hero__img"
+          />
+        </picture>
+      </section>
+      <!-- Hero Section End -->
+      <!-- CTA Section Start -->
+      <section class="cta">
+        <p class="cta__title">Connect with us</p>
+        <p class="cta__desc">
+          Schedule a quick call to learn how Area can turn your regional data
+          into a powerful advantage.
+        </p>
+        <button class="cta__btn">
+          Learn More <img src="src/imgs/Arrow.svg" alt="Arrow" />
+        </button>
+      </section>
+      <!-- CTA Section End -->
+    </main>
+    <!-- Main End -->
+    <!-- Footer Start -->
+    <footer class="footer">
+      <nav class="page__nav">
+        <ul class="page__list">
+          <li class="page__item">
+            <a href="#benefits" class="page__link">Benefits</a>
+          </li>
+
+          <li class="page__item">
+            <a href="#spec" class="page__link">Specifications</a>
+          </li>
+
+          <li class="page__item">
+            <a href="#hid" class="page__link">How-to</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="copyright">All Rights Reserved &copy; Area 2025.</p>
+    </footer>
+    <!-- Footer End -->
+    <script src="main.js"></script>
+  </body>
+</html>

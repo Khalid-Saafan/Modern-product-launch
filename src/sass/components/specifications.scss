@@ -1,0 +1,249 @@
+@use "../abstract/variables" as *;
+@use "../abstract/placeholders" as *;
+@use "../abstract/mixins" as *;
+
+.specifications {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__content {
+    align-self: center;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #485c11;
+    line-height: 1.4;
+    letter-spacing: -0.12px;
+  }
+  &__text {
+    @extend %fontfamily_placeholder;
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: -0.075px;
+    color: #6f6f6f;
+    &--large {
+      font-family: "Crimson Text", sans-serif;
+      font-size: 60px;
+      line-height: 0.9;
+      letter-spacing: -1.8px;
+      color: #000;
+    }
+  }
+
+  &__btn {
+    @include btn(#dfecc6);
+    @extend %fontfamily_placeholder;
+    font-size: 15px;
+    color: #000;
+
+    transition: background-color 0.35s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #8e9c78;
+      color: #fff;
+    }
+  }
+
+  // table grid system
+  &__table {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    flex-basis: 400px;
+    &--highlighted {
+      border-radius: 20px;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__head {
+    @extend %fontfamily_placeholder;
+    font-size: 25.71px;
+    justify-content: center;
+
+    &-2 {
+      font-family: "Rethink Sans", sans-serif;
+      font-size: 22.86px;
+    }
+
+    &-3 {
+      font-family: "Reddit Mono", monospace;
+      font-size: 21.65px;
+    }
+  }
+
+  &__head,
+  &__head-2,
+  &__head-3 {
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.95px;
+    justify-content: center;
+  }
+
+  &__row {
+    &:first-child {
+      padding: 40px 30px;
+    }
+
+    &:not(:first-child) {
+      padding: 32px 20px;
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span {
+      font-family: "Roboto Mono", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: -0.12px;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
+  .specifications {
+    max-width: 720px;
+
+    &__content {
+      max-width: 720px;
+    }
+
+    &__title {
+      font-size: 11;
+      letter-spacing: -0.11px;
+    }
+    &__text {
+      &--large {
+        font-size: 54px;
+        letter-spacing: -1.62px;
+      }
+    }
+
+    &__table {
+      padding: 2px;
+    }
+
+    &__column {
+      flex-basis: 235px;
+    }
+
+    &__head {
+      font-size: 25.71px;
+      justify-content: center;
+      letter-spacing: -2.0568px;
+
+      &-2 {
+        font-size: 22.86px;
+        letter-spacing: -1.8288px;
+      }
+
+      &-3 {
+        font-size: 21.65px;
+        letter-spacing: -1.732px;
+      }
+    }
+
+    &__head,
+    &__head-2,
+    &__head-3 {
+      font-weight: 600;
+      line-height: 1.2;
+      justify-content: center;
+    }
+
+    &__row {
+      span {
+        font-size: 11px;
+        letter-spacing: -0.11px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .specifications {
+    max-width: 375px;
+
+    &__content {
+      max-width: 375px;
+    }
+
+    &__btn {
+      align-self: stretch;
+    }
+
+    &__title {
+      font-size: 10.5;
+      letter-spacing: -0.315px;
+    }
+    &__text {
+      &--large {
+        font-size: 50px;
+        letter-spacing: -1.5px;
+        line-height: 0.95;
+
+      }
+    }
+
+    &__table {
+      padding: 2px;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    &__column {
+      flex-basis: 200px;
+    }
+
+    &__head {
+      font-size: 25.71px;
+      justify-content: center;
+
+      &-2 {
+        font-size: 22.86px;
+      }
+
+      &-3 {
+        font-size: 21.65px;
+      }
+    }
+
+    &__head,
+    &__head-2,
+    &__head-3 {
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: -0.95px;
+      justify-content: center;
+    }
+
+    &__row {
+      justify-content: center;
+      span {
+        font-size: 10.5;
+        letter-spacing: -0.315px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@use "../abstract/variables" as *;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $color-background;
+}
+
+input {
+  font-family: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+}
+
+ul {
+  list-style: none;
+}
