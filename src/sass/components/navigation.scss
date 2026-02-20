@@ -88,8 +88,10 @@
 
 @media only screen and (max-width: 480px) {
   .navigation {
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
 
     &__list-container {
       display: none;
@@ -130,6 +132,7 @@
     }
 
     &__btn {
+      display: none;
       align-self: flex-start;
       margin-bottom: 10px;
       &:hover {

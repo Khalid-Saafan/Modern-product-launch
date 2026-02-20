@@ -14,6 +14,19 @@
 
   padding: 120px 300px;
 
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #e9e9e9;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
   &__title {
     font-family: "Crimson Text", sans-serif;
     font-size: 60px;
@@ -27,11 +40,11 @@
   }
 
   &__btn {
-    @include btn(#dfecc6);
+    @include btn(#485C11);
     @extend %fontfamily_placeholder;
     font-size: 15px;
     letter-spacing: -0.375px;
-    color: #000;
+    color: #fff;
 
     transition: background-color 0.35s;
 
